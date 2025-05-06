@@ -1,0 +1,340 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    transition:  0.3s, color 0.3s;
+    /* background-color: #000; */
+  }
+
+
+header {
+  background: #111;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 30px;
+  height: 30px;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding-left: 70px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+.container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.owl-carousel {
+  width: 100%;
+}
+
+.sevgidankuyganchiyaburi {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 354px;
+  height: 239px;
+  transition: all 0.3s ease;
+}
+
+.rasm {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.maymun {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.tafsilot {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+
+.icons {
+  display: flex;
+  gap: 20px;
+}
+
+.icons .icon {
+  width: 20px;
+  height: 20px;
+}
+    .hero {
+      text-align: center;
+      background: #000;
+      color: white;
+      padding: 80px 20px;
+      display: flex;
+    }
+    
+  .hero img {
+    max-width: 200px;
+    margin-top: 20px;
+  }
+  
+  .search-box input {
+    padding: 10px;
+    width: 300px;
+  }
+  
+  .search-box button {
+    padding: 10px 20px;
+    background: blue;
+    color: white;
+    border: none;
+  }
+  
+
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .hamburger div {
+    width: 25px;
+    height: 3px;
+    background: white;
+    margin: 4px 0;
+  }
+  .mohid{
+    width: 27;
+height: 27;
+top: 22px;
+left: -2px;
+font-family: Poppins;
+font-weight: 500;
+font-size: 16px;
+line-height: 100%;
+letter-spacing: 0%;
+display: flex;
+justify-content:center;
+gap: 1px;
+  }
+  .hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+    color: white;
+    background-color: #000;
+  }
+  
+  .birnarsa {
+    max-width: 457px;
+  }
+  
+  .birnarsa h2 {
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 25px;
+  }
+  
+  .birnarsa p {
+    font-weight: 400;
+    font-size: 14px;
+    color: #8B8E99;
+    line-height: 1.6;
+    margin-bottom: 35px;
+  }
+  
+  .search-box {
+    display: flex;
+    align-items: center;
+    background: #f1f1f1;
+    border-radius: 12px;
+    overflow: hidden;
+    max-width: 350px;
+  }
+  
+  .search-box input {
+    border: none;
+    padding: 14px 20px;
+    flex: 1;
+    font-size: 14px;
+    outline: none;
+    color: #333;
+  }
+  
+  .search-box button {
+    background-color: #3858D6;
+    color: white;
+    border: none;
+    padding: 14px 24px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+   }
+  
+  .search-box button:hover {
+    background-color: #2d47b1;
+  }
+  
+  .hero-image img {
+    max-width: 300px;
+    
+   
+  }
+  .olma {
+    text-align: center;
+    padding: 20px 0 ;
+    padding-top: 235px;
+    color: #3858D6;
+    font-family: Inter;
+font-weight: 500;
+font-size: 16px;
+line-height: 100%;
+letter-spacing: 0%;
+text-align: center;
+
+
+  }
+  
+  .anor {
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .container {
+    display: flex;
+    gap: 20px; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    padding: 20px;
+  }
+
+  .product {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    transition: all 0.3s ease;
+  }
+
+  .image {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  .icons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .icons .icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+
+  .name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .yulduz {
+    margin-bottom: 10px;
+  }
+
+  .rating {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+
+
+  .price {
+    font-size: 16px;
+  }
+  
+  .yanginarxakala{
+    color: #888;
+    text-decoration: line-through;
+    margin-right: 10px;
+  }
+  
+  .eskinarxakala {
+    color: #3858D6;
+    font-weight: bold;
+  }
+  @media(max-width:747px){
+    .hero-image{
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column; 
+      align-items: center; 
+    }
+  }
+  @media (max-width: 768px) {
+    nav ul {
+      display: none;
+      flex-direction: column;
+      background: #000;
+      position: absolute;
+      top: 60px;
+      right: 10px;
+    }
+    nav ul.active {
+      display: flex;
+    }
+    .hamburger {
+      display: flex;
+    }
+  }
+  @media (max-width: 768px) {
+    .hero-image {
+      flex-direction: column; 
+    }
+  
+    .image {
+      text-align: center; 
+    }
+  }
