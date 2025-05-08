@@ -9,39 +9,107 @@
     transition:  0.3s, color 0.3s;
     /* background-color: #000; */
   }
+  #loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  .loader {
+    width: 40px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    animation: l5 1s infinite linear alternate;
+  }
+  
+  @keyframes l5 {
+    0% { box-shadow: 20px 0 #000, -20px 0 #0002; background: #000; }
+    100% { box-shadow: 20px 0 #0002, -20px 0 #000; background: #000; }
+  }
 
-
-header {
-  background: #111;
-  color: #fff;
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.logo img {
-  width: 30px;
-  height: 30px;
-}
-
-nav ul {
-  display: flex;
-  gap: 20px;
-  list-style: none;
-  padding-left: 70px;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-}
+  header {
+    background: #111;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--qora);
+    min-width: 160px;
+    padding: 10px;
+    z-index: 1000;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown-content li {
+    margin: 5px 0;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .logo img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding-left: 70px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  .container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  
+  .owl-carousel {
+    width: 100%;
+  }
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .hamburger div {
+    width: 25px;
+    height: 3px;
+    background: white;
+    margin: 4px 0;
+  }
+  
 .container {
   display: flex;
   gap: 20px;
@@ -163,6 +231,7 @@ gap: 1px;
   }
   
   .birnarsa h2 {
+    color: #F5F3E7;
     font-weight: 700;
     font-size: 48px;
     margin-bottom: 25px;
@@ -500,7 +569,7 @@ gap: 1px;
   }
   .box {
     display: flex;
-    padding-top: 492px;
+    padding-top: 330px;
   }
   .nima {
     display: flex;
@@ -589,43 +658,26 @@ text-align: center;
 
 
   }
-  .scroll-btn {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    border-radius: 50%;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  #backToTop {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    display: none; 
-    background-color: #333;
-    color: white;
-    border: none;
-    padding: 15px;
-    border-radius: 50%;
-    font-size: 24px;
-    cursor: pointer;
-    z-index: 1000;
-    transition: opacity 0.3s ease;
-  }
-  
-  #backToTop:hover {
-    background-color: #555;
-  }
-  
-  .scroll-btn img {
-    width: 40px;
-    height: 40px;
-  }
+
+#backToTopBtn {
+  display: none; 
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  padding: 12px 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#backToTopBtn:hover {
+  background-color: #45a049;
+}
   .anor {
     text-align: center;
     padding: 20px 0;
@@ -697,19 +749,9 @@ border-radius: 15px;
 color: #3858D6;
 padding-left: 700px;
   }
-  .hi{
-    font-family: Poppins;
-font-weight: 600;
-font-size: 18px;
-line-height: 100%;
-letter-spacing: 0%;
-text-align: center;
-width: 184px;
-height: 27px;
-top: 1595px;
-left: 457px;
-color: black;
-
+  body img:hover {
+    transform: scale(1.2);
+    transition: 1s;
   }
   .yanginarxakala{
     color: #888;
@@ -721,40 +763,253 @@ color: black;
     color: #3858D6;
     font-weight: bold;
   }
-  @media(max-width:747px){
-    .hero-image{
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-  }
-  @media (max-width: 768px) {
-    .container {
+
+.hi{
+  padding-top: 69px;
+  padding-right: 200px;
+}
+
+.sahifa-kengligi {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+
+.fikrlar {
+  padding: 80px 20px;
+  text-align: center;
+
+}
+
+.fikrlar h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.fikr-kartalari {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.fikr-karta {
+
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  padding: 30px;
+  opacity: 0.6;
+  transition: all 0.3s ease;
+}
+
+.fikr-karta.faol {
+  opacity: 1;
+  /* transform: scale(1.05); */
+  z-index: 1;
+}
+
+.profil-rasm {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.fikr-matni {
+  font-style: italic;
+  color: #555;
+  margin: 20px 0;
+}
+
+.baho {
+  color: gold;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.fikr-karta h4 {
+  margin: 0;
+  color: #333;
+}
+
+.sahifalash {
+  margin-top: 30px;
+}
+
+.sahifalash .nuqta {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+
+.sahifalash .nuqta.faol {
+  background-color: #007bff;
+}
+
+.yangiliklar {
+  padding: 60px 20px;
+  background-color:#F5F3E7;
+  color: white;
+}
+
+.yangiliklar-kontent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.matn-qismi h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.matn-qismi p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.matn-qismi form {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.matn-qismi input[type="email"] {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  width: 250px;
+  min-width: 200px;
+}
+
+.matn-qismi button {
+  padding: 10px 20px;
+  background-color: #3858D6;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.rasim-qismi img {
+  width: 200px;
+  max-width: 100%;
+  margin-left: 40px;
+}
+.matn-qismi,h2{
+  color: #1E1D1D;
+}
+.matn-qismi,h2.p{
+  color: #8B8E99;
+}
+
+.footer {
+  background-color: #000; 
+  color: #fff; 
+  text-align: center;
+  padding: 20px 0; 
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.copyright {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+  @media(max-width:847px){
+    .box{
       flex-direction: column; 
-      align-items: center; 
+      align-items: center;
     }
   }
   @media (max-width: 768px) {
-    nav ul {
+    header nav ul {
       display: none;
       flex-direction: column;
       background: #000;
       position: absolute;
       top: 60px;
       right: 10px;
+      width: 100%;
+      padding: 20px;
+      transition: all 0.3s ease;
     }
-    nav ul.active {
+  
+    header nav ul.active {
       display: flex;
     }
-    .hamburger {
+  
+    header .hamburger {
       display: flex;
     }
-  }
-  @media (max-width: 768px) {
-    .hero-image {
+  
+    .container {
       flex-direction: column; 
+      align-items: center;
+    }
+  
+    .product {
+      width: 100%; 
+      max-width: 100%; 
     }
   
     .image {
-      text-align: center; 
+      max-width: 100%;
     }
+  
+    .birnarsa {
+      max-width: 100%; 
+    }
+  
+    .hero-section {
+      flex-direction: column; 
+    }
+  
+    .hero-image {
+      margin-top: 20px; 
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      gap: 10px; 
+    }
+  
+    .product {
+      padding: 15px;
+    }
+  
+    .image {
+      max-width: 150px; 
+    }
+  
+    .name {
+      font-size: 16px; 
+    }
+  
+    .price {
+      font-size: 12px; 
+  
+    .birnarsa h2 {
+      font-size: 32px; 
+    }
+  
+    .birnarsa p {
+      font-size: 12px; 
+    }
+  }
   }

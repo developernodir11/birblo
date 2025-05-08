@@ -7,31 +7,49 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+  <div id="loader-wrapper">
+    <div class="loader"></div>
+  </div>
+  
+ <header>
+  <div class="logo">
+    <img src="./images/Apple Watch.svg" alt="Logo">
+    <p>Mohid</p>
+  </div>
 
-  <header>
-    
-    <div class="logo">
-      <img src="./images/Apple Watch.svg" alt="Logo">
-      <p>Mohid</p>
+  <nav>
+    <div class="hamburger" id="hamburger">
+      <div></div><div></div><div></div>
     </div>
-    <nav>
-      <ul id="nav-list">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#brands">Brands</a></li>
-        <li><a href="#products">Products</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="icons">
-      <img src="./images/Search.svg" alt="Search" class="icon">
-      <img src="./images/Person.svg" alt="User" class="icon">
-      <img src="./images/Shopping Cart.svg" alt="Cart" class="icon">
-    </div>
-  </header>
+
+    <ul id="nav-list">
+      <li><a href="#home">Home</a></li>
+      <li class="dropdown">
+        <a href="#brands">Brands ▾</a>
+        <ul class="dropdown-content">
+          <li><a href="#">Apple</a></li>
+          <li><a href="#">Samsung</a></li>
+          <li><a href="#">Fitbit</a></li>
+        </ul>
+      </li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#hi">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="icons">
+    <img src="./images/Search.svg" alt="Search" class="icon">
+    <img src="./images/Person.svg" alt="User" class="icon">
+    <img src="./images/Shopping Cart.svg" alt="Cart" class="icon">
+    <button id="dark-mode-toggle"><i class="fas fa-moon"></i></button>
+  </div>
+</header>
 
   <div class="hero-section" id="home">
     <div class="birnarsa">
@@ -171,9 +189,88 @@
       </div>
     </div>
   </div>
-  <button id="scrollBtn" class="scroll-btn" title="Yuqoriga qaytish">
-      <img src="https://cdn-icons-png.flaticon.com/512/6051/6051376.png" alt="Scroll Down">
-    </button>
   <div class="hi"><img src="./images/View More Button.svg" alt=""></div>
+  
+  </div>
+  <button id="backToTopBtn" title="Go to top">↑</button>
+  <section class="testimonials" id="about">
+    <section class="fikrlar">
+      <div class="sahifa-kengligi">
+        <p>Here are our some of the best clients.</p>
+        <h2> What People Say About Us</h2>
+    
+        <div class="fikr-kartalari">
+
+          <div class="fikr-karta faol">
+            <img src="./images/6426000_sd-removebg-preview 1 (2).svg" alt="Hamza Faizi" class="profil-rasm">
+            <div class="fikr-matni">
+              <h4>Hamza Faizi</h4>
+<p>Don’t waste time, just order! This is the best website to puschase smart watches.</p>
+            </div>
+            <div class="baho">
+             <img src="./images/Frame 5.svg" alt="">
+            </div>
+          </div>
+
+          <div class="fikr-karta">
+            <img src="./images/---.svg" alt="Hafiz Huzaifa" class="profil-rasm">
+            <div class="fikr-matni">
+              <h4>Hafiz Huzaifa</h4>
+<p>I’ve been purchasing smart watches of Mohid for a long time. All the products are good quality.</p>
+            </div>
+            <div class="baho">
+              <img src="./images/Frame 5.svg" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="sahifalash">
+          <span class="nuqta faol"></span>
+          <span class="nuqta"></span>
+          <span class="nuqta"></span>
+        </div>
+        <div class="owl-carousel owl-theme">
+          <div class="item"><h4>1</h4></div>
+          <div class="item"><h4>2</h4></div>
+          <div class="item"><h4>3</h4></div>
+          <div class="item"><h4>4</h4></div>
+          <div class="item"><h4>5</h4></div>
+          <div class="item"><h4>6</h4></div>
+          <div class="item"><h4>7</h4></div>
+          <div class="item"><h4>8</h4></div>
+          <div class="item"><h4>9</h4></div>
+          <div class="item"><h4>10</h4></div>
+          <div class="item"><h4>11</h4></div>
+          <div class="item"><h4>12</h4></div>
+      </div>
+      </div>
+    </section>
+    
+    <section class="yangiliklar" id="hi">
+      <div class="sahifa-kengligi">
+        <div class="yangiliklar-kontent">
+          <div class="matn-qismi">
+            <h2>Subscribe To Newsletter</h2>
+            <p>Get free guide about smart watches daily. </p>
+            <form>
+              <input type="email" placeholder="Enter Email Address" required />
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+          <div class="rasim-qismi">
+            <img src="./images/blakcpiano.svg" alt="Smart Watch" class="yangiliklar-rasmi" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <p class="copyright">Copyright @ 2022 | Mohid</p>
+      </div>
+    </footer> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="./js/main.js"></script>
 </body>
 </html>
