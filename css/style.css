@@ -85,6 +85,7 @@
   nav ul li a {
     color: white;
     text-decoration: none;
+    transition: 1s;
   }
   .container {
     display: flex;
@@ -180,7 +181,7 @@
   
   .search-box input {
     padding: 10px;
-    width: 300px;
+    max-width: 300px;
   }
   
   .search-box button {
@@ -223,7 +224,7 @@ gap: 1px;
     align-items: center;
     padding: 100px;
     color: white;
-    background-color: #000;
+    background-color:var(--qora);
   }
   
   .birnarsa {
@@ -308,7 +309,7 @@ gap: 1px;
   
   .dark {
     --kok: rgb(161, 50, 70);
-    --qora: rgb(203, 203, 203);
+    --qora: rgb(214, 254, 11);
     --oq: rgb(99, 98, 98);
     --qizil: rgb(47, 17, 17);
     --oqimtir: hsla(0, 2%, 12%, 0.951);
@@ -807,7 +808,6 @@ padding-left: 700px;
 
 .fikr-karta.faol {
   opacity: 1;
-  /* transform: scale(1.05); */
   z-index: 1;
 }
 
@@ -1010,6 +1010,9 @@ padding-left: 700px;
   
     .birnarsa p {
       font-size: 12px; 
+    }
+    .search-box{
+      max-width:200px;
     }
   }
   }
