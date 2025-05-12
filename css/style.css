@@ -797,27 +797,24 @@ padding-left: 700px;
   gap: 40px;
   flex-wrap: wrap;
 }
-
 .fikr-karta {
-
   border-radius: 15px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-  width: 350px;
+  width: 450px;
   padding: 30px;
-  opacity: 0.6;
   transition: all 0.3s ease;
+  display: flex;
+  gap: 10px;
 }
 
 .fikr-karta.faol {
+
   opacity: 1;
   z-index: 1;
 }
 
 .profil-rasm {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  object-fit: cover;
+  width: 162px;
   margin-bottom: 15px;
 }
 
@@ -874,8 +871,7 @@ padding-left: 700px;
 }
 
 .matn-qismi p {
-  font-size: 1rem;
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .matn-qismi form {
